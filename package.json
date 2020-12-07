@@ -1,0 +1,33 @@
+{
+    "name": "aoc2020",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc -p .",
+        "start": "npm run build -- -w",
+        "test": "jest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cross-env": "^7.0.3",
+        "fs": "0.0.1-security",
+        "laravel-mix": "^5.0.9"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.9",
+        "@babel/preset-env": "^7.12.7",
+        "@babel/preset-typescript": "^7.12.7",
+        "@tsconfig/recommended": "^1.0.1",
+        "@types/jest": "^26.0.16",
+        "babel-jest": "^26.6.3",
+        "browser-sync": "^2.26.13",
+        "browser-sync-webpack-plugin": "^2.0.1",
+        "jest": "^26.6.3",
+        "ts-loader": "^8.0.11",
+        "ts-node": "^9.0.0",
+        "typescript": "^4.1.2"
+    }
+}
