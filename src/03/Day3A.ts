@@ -39,11 +39,7 @@ export default class Day3A {
     }
 
     readCord(getX: number, getY: number): string {
-        let newX = getX;
-        if(getX >= this.lengthX) {
-            newX = getX % this.lengthX;
-        }
-
+        let newX = getX % this.lengthX;
         const index = newX + this.lengthX * getY;
         return this.flatMap[index];
     }
