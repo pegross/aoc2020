@@ -27,7 +27,7 @@ export default class Day3A {
         let posY = 0;
         let trees = 0;
 
-        while (posY < this.lengthY) {
+        while (posY < this.lengthY - 1) {
             if (this.readCord(posX, posY) === '#') {
                 trees++;
             }
@@ -40,7 +40,7 @@ export default class Day3A {
 
     readCord(getX: number, getY: number): string {
         let newX = getX;
-        if(getX > this.lengthX) {
+        if(getX >= this.lengthX) {
             newX = getX % this.lengthX;
         }
 
